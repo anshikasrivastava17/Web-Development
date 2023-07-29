@@ -1,0 +1,171 @@
+body{
+background:black;
+color:white;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+height:100vh;
+background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/header-image.png); 
+/* transparency */
+background-size: cover;
+background-position: center;
+position: relative;
+padding: 10px 5%; /* top-bottom nd left right*/
+}
+
+nav{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    cursor: pointer;
+    width:170px;
+}
+
+nav button{
+    cursor: pointer;
+    background: red;
+    color: white; 
+    padding: 7px 17px; 
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.language{
+    align-items: center;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid white;
+}
+.custom-style{ /* for the icon*/
+    margin-left: 10px;
+}
+
+.content{
+  position: relative;
+  top:40%; 
+  left:50%;
+  transform: translate(-50%,-50%); /* to center it both horizontally & vertically*/
+  text-align: center;
+  margin-top:90px;
+}
+
+.content h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin:0px;
+}
+
+.content h3{
+    font-size: 25px;
+    /*font-weight: 450; */
+    margin-bottom: 30px; 
+}
+
+.content p{
+    font-size: 20px;
+}
+
+.Email{  
+    background: rgba(22, 22, 22,0.7);
+    border-radius: 5px;
+    flex:1;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 5px;
+    width:40%;
+    padding: 20px;
+    border: 2px solid grey;
+    overflow: hidden; /* to hide any content that exceeds dimensions of container */
+    cursor: pointer;
+    color: azure;
+}
+
+.getstarted{
+    cursor: pointer;
+    border: 0;
+    outline:0;
+    background: red;
+    color:white;
+    transition: background-color 1s ease-in;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 18px 30px;
+    padding-top: 14px;
+    border-radius: 5px;
+    display: inline-flex;
+}
+
+.getstarted:hover {  
+    background-color: brown;
+    color:  black;
+    animation: jump 0.5s;
+  }
+
+  @keyframes jump {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+ /* ---------------------------------------------  */
+
+  .features{
+    padding: 50px 12%;
+    font-size: 22px;
+  }
+
+  .row{
+    display:flex;
+    width:100%;
+    align-items: center;
+    flex-wrap:wrap;
+    padding:50px 0;
+  }
+
+  .features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .text{
+    flex-basis: 50%; 
+    /*to define the initial size of a flex item along the main axis before 
+    any remaining space is distributed. applied to individual flex items */
+    margin-bottom: 20px;
+  }
+
+  .imagecol{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+
+  .imagecol img{
+    display:block;
+    width:90%;
+    margin:auto;  /* to center it*/
+  }
+
+  hr{
+    padding:0;
+    margin:0;
+    width:100vw;
+    position: absolute;
+    left: 0;
+    height: 8px;
+    background-color: #333230;
+    border: none;
+    
+  }
