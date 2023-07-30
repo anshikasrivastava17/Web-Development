@@ -135,8 +135,7 @@ nav button{
   }
 
   .features h2{
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 50px; font-weight: 600;
     margin-bottom: 20px;
   }
 
@@ -167,5 +166,72 @@ nav button{
     height: 8px;
     background-color: #333230;
     border: none;
-    
+  }
+
+  /* ---------------------------------------------  */
+
+  .faq{
+    padding:10px 12%;
+    text-align:center;
+    font-size: 20px;
+  }
+
+  .faq h2{
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  .accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+  }
+
+  .accordion li{
+    list-style: none;
+    width: 100%;
+    padding:5px;
+  }
+
+  .accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px; font-weight: 500;
+    background: #333230;
+    margin-bottom: 2px; cursor: pointer;
+    position: relative;
+  }
+
+  label::after{ /* to target content to be added after the label element's text, in this case '+' */
+    content: '+';
+    font-size: 50px;
+    position: absolute;
+    right: 40px;
+    transition: transform 0.5s;
+  }
+
+  input[type="radio"]
+  {
+   display: none; /*to hide the checkbox button */
+  }
+
+  .accordion .quesdetail{
+  background: #333230;
+  text-align: left;
+  padding: 0 25px;
+  max-height: 0;
+  overflow: hidden; /* to hide extra content */
+  transition: max-height 0.5s, padding 0.5s;
+  }
+
+  .accordion input[type="radio"]:checked + label + .quesdetail{ /*to display content on clicking*/
+    /*:checked is a pseudo-class selector, and it targets elements that are in a checked state, 
+    specifically for input elements of type "radio" and "checkbox." */
+    max-height: 600px; /*checked means it changes the height and padding of the selected option */
+    padding: 30px 20px;
+  }
+
+  .accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);  /* to turn the '+' icon into 'x' on clicking */
   }
