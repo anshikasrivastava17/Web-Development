@@ -78,7 +78,7 @@ nav button{
     display: inline-flex;
     align-items: center;
     margin-top: 5px;
-    width:40%;
+    width:25%;
     padding: 20px;
     border: 2px solid grey;
     overflow: hidden; /* to hide any content that exceeds dimensions of container */
@@ -184,7 +184,7 @@ nav button{
   .accordion{
     margin: 60px auto;
     width: 100%;
-    max-width: 750px;
+    max-width: 950px;
   }
 
   .accordion li{
@@ -196,11 +196,16 @@ nav button{
   .accordion li label{
     display: flex;
     align-items: center;
-    padding: 20px;
-    font-size: 18px; font-weight: 500;
+    padding: 30px;
+    font-size: 23px; font-weight: 500;
     background: #333230;
     margin-bottom: 2px; cursor: pointer;
     position: relative;
+  }
+
+  .accordion li label:hover{
+    animation: jump 0.5s;
+    background: #272626;
   }
 
   label::after{ /* to target content to be added after the label element's text, in this case '+' */
@@ -225,7 +230,7 @@ nav button{
   transition: max-height 0.5s, padding 0.5s;
   }
 
-  .accordion input[type="radio"]:checked + label + .quesdetail{ /*to display content on clicking*/
+  .accordion input[type="radio"]:checked + label + .quesdetail{ /to display content on clicking/
     /*:checked is a pseudo-class selector, and it targets elements that are in a checked state, 
     specifically for input elements of type "radio" and "checkbox." */
     max-height: 600px; /*checked means it changes the height and padding of the selected option */
@@ -235,3 +240,8 @@ nav button{
   .accordion input[type="radio"]:checked + label::after{
     transform: rotate(135deg);  /* to turn the '+' icon into 'x' on clicking */
   }
+
+  /* ---------------------------------------------------- */
+ #belowfaq{
+  margin-top:20px;
+ }
