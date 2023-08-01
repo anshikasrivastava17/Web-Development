@@ -26,7 +26,7 @@ nav{
     width:170px;
 }
 
-nav button{
+nav button,footer button{
     cursor: pointer;
     background: red;
     color: white; 
@@ -230,7 +230,7 @@ nav button{
   transition: max-height 0.5s, padding 0.5s;
   }
 
-  .accordion input[type="radio"]:checked + label + .quesdetail{ /to display content on clicking/
+  .accordion input[type="radio"]:checked + label + .quesdetail{ /*to display content on clicking*/
     /*:checked is a pseudo-class selector, and it targets elements that are in a checked state, 
     specifically for input elements of type "radio" and "checkbox." */
     max-height: 600px; /*checked means it changes the height and padding of the selected option */
@@ -242,6 +242,61 @@ nav button{
   }
 
   /* ---------------------------------------------------- */
- #belowfaq{
+ 
+  #belowfaq{
   margin-top:20px;
  }
+
+  /* ---------------------------------------------------- */
+  
+  footer{
+    padding: 50px;
+    align-items: center;
+    position:relative;
+    top:40%; 
+    left:8%;
+   
+  }
+
+  footer h2{
+    font-size: 20px;
+    color: #959493;
+    margin-bottom: 30px;
+  
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr); /* Creates 5 rows with equal height */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns with equal width */
+    grid-gap: 10px; /* Add gap between grid items */
+    grid-row-gap: 20px; /* Adds a 20px gap between rows */
+
+    
+  }
+
+  a{
+  color:#959493;
+  }
+
+  footer button{
+    margin-top:30px;
+    margin-left: -10px;
+  }
+
+  footer p{
+    color: #959493;
+    padding-top:10px;
+  }
+
+  /*--------- MEDIA QUERIES FOR SMALL SCREEN--------*/
+
+  @media only screen and (max-width:600px) {
+    .logo{
+      width:100px;
+    }
+    nav button{
+      padding: 5px 10px;
+    }
+  }
+ 
