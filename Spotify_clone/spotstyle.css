@@ -1,0 +1,108 @@
+/* for fonts use Google Fonts so that it can open on everbody's web 
+for icons use Font Awesome */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+ 
+body{
+    margin:0
+}
+
+
+.navigation{
+    background-color: black;
+    display:flex;
+    padding-top: 10px;
+    padding-bottom: 10px;  /* padding for the inside margin of navigation box
+                            margin given for gap outside the box  */
+    align-items:center;
+}
+.navigation ul{
+    display:flex;
+    gap:25px;
+    list-style-type: none;
+    font-weight: bold;
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.brand{
+    display:flex;
+    align-items:center;
+}
+.brand img{
+    width:60px;
+    margin-left: 20px;
+}
+.brand span{
+    font-weight:bolder;
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.container{
+    min-height: 65vh;  /* vh is viewport height i.e. wrt to screen */
+    display: flex;
+    font-family: 'Valera Round', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 20px auto;
+    width:70%;
+    border-radius: 15px;
+    padding: 25px;
+    background-image: url('./images/selena.jpg'); 
+    background-size: 1200px 550px;
+}  
+
+
+.bottom{
+    position:sticky;
+    height:100px;
+    background-color: black;
+    color: white;
+    bottom:0px;
+    display:flex;
+    flex-direction:column; /* in bottom class there r 2 elements - prog bar & icons
+    using flex-dir column they come one below another */
+    justify-content: center;
+    align-items: center;
+}
+
+#progressbar{
+    width: 80vw;
+}
+
+.icons{
+    margin-top: 15px; 
+}
+
+.icons i{
+    cursor:pointer;
+}
+
+
+.songitem{
+display:flex;
+height: 50px;
+background-color: white;
+color:black;
+margin: 12px 0px;
+border-radius: 35px;
+justify-content: space-between;
+align-items: center;
+}
+
+.songitem img{
+border-radius: 35px;
+width: 45px;
+margin:0 15px;
+}
+
+.timestamp{
+margin: 0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
