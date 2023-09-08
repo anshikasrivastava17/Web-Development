@@ -8,7 +8,7 @@
     <body>
       <div class="navigation">
        <div class="brand">
-        <img class="logo" src="./images/logo.png" alt="Logo" /><!-- /for closing tag inline-->
+        <img class="logo" src="./images/logo-spotify.png" alt="Logo" /><!-- /for closing tag inline-->
         <!--./ in src for current working folder, 
         alt text is text that appears when you hover on image-->
         <span> Spotify</span>   
@@ -23,48 +23,48 @@
         
         <div class="songlist">
            <h1> Best of all times </h1>
-           <div>
+           <div class="songItemcontainer">
              <div class="songitem"> 
                <img src="./images/heartwants.jpg" alt="1">
-               <span> Heart Wants What It Wants </span>
+               <span class="songname"> Heart Wants What It Wants </span>
                <span class="songlistplay"> <span class="timestamp"> 4:30 <i class="fa-regular fa-circle-play"></i></span>  </span>
              </div> 
 
              <div class="songitem"> 
-              <img src="./images/heartwants.jpg" alt="1">
-              <span> Same Old Love </span>
-              <span class="songlistplay"> <span class="timestamp"> 3:15 <i class="fa-regular fa-circle-play"></i></span>  </span>
-            </div>
+               <img src="./images/heartwants.jpg" alt="1">
+               <span class="songname"> Same Old Love </span>
+               <span class="songlistplay"> <span class="timestamp"> 3:15 <i class="fa-regular fa-circle-play"></i></span>  </span>
+             </div>
 
-            <div class="songitem"> 
-              <img src="./images/heartwants.jpg" alt="1">
-              <span> Sober </span>
-              <span class="songlistplay"> <span class="timestamp"> 5:20 <i class="fa-regular fa-circle-play"></i></span>  </span>
-            </div>
+             <div class="songitem"> 
+               <img src="./images/heartwants.jpg" alt="1">
+               <span class="songname"> Sober </span>
+               <span class="songlistplay"> <span class="timestamp"> 5:20 <i class="fa-regular fa-circle-play"></i></span>  </span>
+             </div>
 
-            <div class="songitem"> 
-              <img src="./images/heartwants.jpg" alt="1">
-              <span> Lose You To Love Me </span>
-              <span class="songlistplay"> <span class="timestamp"> 4:20 <i class="fa-regular fa-circle-play"></i></span>  </span>
-            </div>
+             <div class="songitem"> 
+               <img src="./images/heartwants.jpg" alt="1">
+               <span class="songname"> Lose You To Love Me </span>
+               <span class="songlistplay"> <span class="timestamp"> 4:20 <i class="fa-regular fa-circle-play"></i></span>  </span>
+             </div>
 
-            <div class="songitem"> 
-              <img src="./images/heartwants.jpg" alt="1">
-              <span> Kill Em With Kindness </span>
-              <span class="songlistplay"> <span class="timestamp"> 3:30 <i class="fa-regular fa-circle-play"></i></span>  </span>
-            </div>
+             <div class="songitem"> 
+               <img src="./images/heartwants.jpg" alt="1">
+               <span class="songname"> Kill Em With Kindness </span>
+               <span class="songlistplay"> <span class="timestamp"> 3:30 <i class="fa-regular fa-circle-play"></i></span>  </span>
+             </div>
 
-            <div class="songitem"> 
+             <div class="songitem"> 
               <img src="./images/heartwants.jpg" alt="1">
-              <span> Revival </span>
+              <span class="songname"> Revival </span>
               <span class="songlistplay"> <span class="timestamp"> 4:45 <i class="fa-regular fa-circle-play"></i></span>  </span>
-            </div>
+             </div>
 
-            <div class="songitem"> 
+             <div class="songitem"> 
               <img src="./images/heartwants.jpg" alt="1">
-              <span> Who Says </span>
+              <span class="songname"> Who Says </span>
               <span class="songlistplay"> <span class="timestamp"> 4:30 <i class="fa-regular fa-circle-play"></i></span>  </span>
-            </div>
+             </div>
             </div>
            </div>
         <div class="songbanner"></div>
@@ -74,20 +74,20 @@
       <!-- ------ -------------------------------------------------- -->
 
       <div class="bottom"> <!--for the entire bottom bar-->
-        <input type="range" name="range" id="progressbar" min= "0" max="100">
+        <input type="range" name="range" id="progressbar" min= "0" value="0" max="100">
         <div class="icons">
           <!--fontawesome icons-->
           <i class="fa-solid fa-3x fa-backward-step"></i>  <!-- fa 3x for icon size-->
-          <i class="fa-regular fa-3x fa-circle-play"></i>
+          <i class="fa-regular fa-3x fa-circle-play" id="masterPlay"></i>
           <i class="fa-solid fa-3x fa-forward-step"></i>
         </div>
 
         <div class="songinfo"> 
-          <img src="" alt="">
+          <img src="/images/playing.gif" width="42px" alt="playing" id="gif">
         </div>
       </div>
 
-      
+      <script src="spot.js"></script>
       <script src="https://kit.fontawesome.com/cd0a1ea2a7.js" crossorigin="anonymous"></script>
       <!--above line is for including icons. whole line copied from Font Awesome kit link-->
     </body>
