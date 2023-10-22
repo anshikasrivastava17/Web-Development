@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:ital,wght@0,400;0,600;1,500&display=swap");
+body {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden; /* prevent horizontal vertical scrolling */
+    font-family: 'Inter';
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; 
+    background: linear-gradient(90deg, #FAD0C4 0%, #FAD0C4 1%, #FFD1FF 100%);
+    padding: 10px;
+    width:100%;
+    height: 50px;
+    margin-top: 0;
+}
+
+.navbar p{
+    position: absolute;
+    top: 1.5%;
+    left: 85px;
+    transform: translateX(-50%); 
+    font-weight: 600;
+}
+
+.navbar-list {
+    display:flex;
+    gap:55px;
+    list-style: none;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 50%;
+}
+
+.navbar-item a{
+    color: black;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-decoration: none; /* otherwise gives underlined text by default */
+}
+
+.navbar-item a:hover {
+    color: white;
+  }
+
+/* .navbar-item a:visited {
+    color: purple;
+  } */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      gap: 10px; /* Adjust the gap for smaller screens */
+    }
+  }
+/* --------------------- */
+
+.heading{
+    position: relative;
+    letter-spacing: 0.5px;
+    padding:10px;
+    color: rgba(78, 67, 118, 1);
+    font-weight: bolder;
+}
+
+/* --------------------- */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    height: 100%;   
+}
+
+.left {
+    width: 55%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    }
+
+.circle{
+    background: rgba(250, 208, 196, 1);
+    height: 280px;
+    width: 280px;
+    border-radius: 140px;
+    position: relative;
+    left:20px;
+}
+
+/* ------ left section complete, right begins ---- */
+
+    .right{
+        width: 45%;
+    }
+
+    .right h3 , .right form{
+        margin: 40px;
+        margin-right: 150px;
+    }
+
+    .entries{
+      background: rgba(118, 75, 162, 0.5);
+      width: 50%;
+      color: white;
+      border-radius: 6px;
+      border: none; /* to remove default border */
+      padding: 10px;
+    }
+
+    .entries::placeholder {
+      color: white; /* Change the placeholder text color to white */
+    }
+
+    .submit-button {
+      width: 20%;
+      padding: 7px;
+      padding-right: 9px;
+      padding-left: 6px;
+      border: none;
+      border-radius: 6px;
+      background: linear-gradient(90deg, #667EEA 0%, #764BA2 100%);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: white;
+    }
+    
+    .button-text {
+      flex: 1;
+      text-align: center;
+    }
+    
+    .submit-button img {
+      width: 25px; /* Adjust the width of the icon as needed */
+    }
+    
